@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "97c8b47c-fc72-4b2c-8044-8c2234ae4e9a": {
+      "ProjectGuid": "97c8b47c-fc72-4b2c-8044-8c2234ae4e9a",
+      "DisplayName": "MicrosoftSQLServerClient",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

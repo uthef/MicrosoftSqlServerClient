@@ -1,0 +1,65 @@
+﻿ul.treeView {
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    height: 100%;
+}
+
+ul.treeView li {
+    list-style: none;
+    overflow-wrap: anywhere;
+    transition: background-color 0.3s ease;
+}
+
+ul.treeView li {
+    cursor: pointer;
+    border-bottom: 1px solid #808080;
+    user-select: none;
+    padding: 8px 8px 8px 8px;
+}
+
+ul.treeView li.foldable {
+    list-style: none;
+    background-image: url("/images/ui/triangle90deg.svg");
+    background-repeat: no-repeat;
+    background-size: 8px;
+    background-position-x: 10px;
+    background-position-y: center;
+    padding-left: 25px;
+}
+
+ul li.foldable.open {
+    background-image: url("/images/ui/triangle.svg");
+}
+
+ul.treeView li.item {
+    background-image: url("/images/ui/table.svg");
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position-x: 10px;
+    background-position-y: center;
+    padding-left: 30px;
+}
+
+ul.treeView ul.sub {
+    height: 0px;
+    overflow-y: hidden;
+    transition: max-height 0.2s ease;
+}
+
+ul.treeView ul.sub.open {
+        height: auto;
+}
+
+ul.treeView li:hover {
+    background-color: #b5191948;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ul.treeView li:focus {
+    outline-color: #c31a1a;
+    border-color: #c31a1a;
+    color: #e03b3b;
+    transition: color 0.3s ease;
+    outline: none
+}

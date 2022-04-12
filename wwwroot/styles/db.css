@@ -1,0 +1,103 @@
+﻿#sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 300px;
+    border-right: 1px solid #808080;
+    background-color: #00000023;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: auto;
+}
+
+#container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.panel {
+    text-align: center;
+    padding: 10px;
+}
+
+#dataGrid {
+    width: 100%;
+    height: 100%;
+}
+
+.toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #00000023;
+    border-bottom: 1px solid #808080;
+}
+
+.table-container {
+    display: flex;
+    flex: 1;
+}
+
+#sidebar ul.treeView {
+    display: none;
+}
+
+.preloader-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.sidebar-preloader {
+    display: flex;
+    margin: 0 auto 0 auto;
+    width: 32px;
+    height: 32px;
+}
+
+.toolbar-item {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    user-select: none;
+    padding: 10px 10px 10px 30px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: center;
+    background-size: 16px 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#logout-button {
+    background-image: url("/images/ui/toolbar/logout.svg");
+}
+
+#export-button {
+    background-image: url("/images/ui/toolbar/export.svg");
+}
+
+.toolbar-item:hover {
+    background-color: #b5191948;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.toolbar-item:active {
+    background-color: #b63f3f;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.toolbar-item:focus {
+    outline-color: #fff;
+}
+
+.toolbar .separator {
+    border-right: 1px solid #808080;
+    margin: 10px 0 10px 0;
+}

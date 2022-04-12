@@ -1,0 +1,55 @@
+﻿#logo {
+    display: block;
+    margin: 0 auto 0 auto;
+    background: url("/images/logo.svg") no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+
+input, button {
+    width: 100%;
+}
+
+#submitButton {
+    min-height: 38px;
+}
+
+form {
+    padding: 0 10px 0 10px;
+}
+
+@media screen and (max-width: 300px) {
+    #logo {
+        width: 70vw;
+        height: 70vw;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    body {
+        font-size: 0.9em;
+    }
+
+    input {
+        padding: 8px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    #centering-container {
+       justify-content: start;
+    }
+}
+
+#submitButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    padding: 0;
+}

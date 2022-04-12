@@ -1,0 +1,38 @@
+﻿@model DatabaseModel
+@{
+	ViewData["Title"] = Model?.Name;
+}
+
+@section Head {
+	<link rel="stylesheet" href="/styles/lib/ag-grid.css" />
+	<link rel="stylesheet" href="/styles/lib/ag-theme-alpine-dark.css" />
+	<link rel="stylesheet" href="/styles/treeview.css" />
+	<link rel="stylesheet" href="/styles/db.css" />
+	<script src="/scripts/lib/ag-grid-community.min.noStyle.js"></script>
+	<script src="/scripts/treeview.js"></script>
+	<script src="/scripts/db.js"></script>
+}
+<div id="wrapper">
+	<div id="sidebar">
+		<div class="head panel">
+			Table Hierarchy
+		</div>
+		<ul class="treeView">
+			<li class="foldable root" tabindex="0">@ViewData["Title"]</li>
+			<ul class="sub"></ul>
+		</ul>
+		<div class="preloader-container">
+			<div class="sidebar-preloader preloader"></div>
+		</div>
+	</div>
+	<div id="container">
+		<div class="toolbar">
+			<div class="separator"></div>
+			<a id="export-button" class="toolbar-item">Export CSV</a>
+			<a id="logout-button" href="/Logout" class="toolbar-item">Logout</a>
+		</div>
+		<div class="table-container">
+			<div id="dataGrid" class="ag-theme-alpine-dark"></div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,29 @@
+﻿@{
+	ViewData["Title"] = "Authentication";
+}
+
+@section Head {
+	<link rel="stylesheet" href="/styles/auth.css" />
+	<script src="/scripts/auth.js"></script>
+}
+
+<div id="centering-container">
+	<form id="auth-form">
+		<div id="logo"></div>
+		<h1>Microsoft SQL Server Client</h1>
+		<label for="server-input">Server (required)</label>
+		<input id="server-input" name="server" type="text" />
+		<label for="database-input">Database (required)</label>
+		<input id="database-input" name="database" type="text" />
+		<label for="userid-input">User ID</label>
+		<input id="userid-input" name="userid" type="text" />
+		<label for="password-input">Password</label>
+		<input id="password-input" name="password" type="password" />
+		<button id="submitButton" type="submit">Connect</button>
+	</form>
+</div>
+
+<div class="notification top">
+	<div class="icon"></div>
+	<span>Text</span>
+</div>
